@@ -1,0 +1,67 @@
+---
+layout: default
+title: ConnecSync
+---
+{% include navbar.html %}
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	$( "#request" ).click(function(e) {
+	  $("#msg").text("Request sent");
+	});
+	$( "#sync" ).click(function() {
+	  window.location = "./graphics/Angie.vcf"
+	});
+});
+</script>
+<table class="table-responsive" border="0" style="font-size:12px;">
+	<tbody>
+
+		<tr>
+			<td rowspan="2"><img class="img-responsive" src="./graphics/icon.png" width="80px" height="80px"></td>
+			<td valign="bottom">Thank You for Using ConnecSync!
+			</td>
+			
+		</tr>
+		<tr>
+			<td valign="top">
+				You may now use the QR Code below to connect with people!
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+<p><img src="./graphics/qrcode.png" width="100px" height="100px"></p>
+<form>
+   
+		<p>You may know Angie in other social circles:</p>
+		<div class="checkbox">
+  			<label>
+    			<input type="checkbox" value="" checked >
+    			Elixir
+  			</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked >
+	    		Friend
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked >
+	    		School
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked >
+	    		Family
+	  		</label>
+		</div>
+		
+			<button type="button" id="request" class="btn btn-primary">Request</button><p style="display:inline;margin-left:10px;" id="msg"></p>
+		
+</form>
+<br>
+<button type="button" id="sync" class="btn btn-primary">Sync Contact</button>

@@ -1,0 +1,129 @@
+---
+layout: default
+title: ConnecSync
+---
+{% include navbar.html %}
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script>
+  $.ajax({
+    headers: {"Content-Type":"text/x-vcard"}
+  })
+</script>
+<table class="table-responsive" border="0">
+    <tbody>
+        <tr>
+        	<td rowspan="4"><img class="img-responsive" src="./graphics/angie_cv_photo.jpg" width="120px" height="160px"></td>
+            <td>Email: angie@connecsync.com</td>
+        </tr>
+        <tr>
+            <td>Mobile: +65 9455 3237</td>
+        </tr>
+        <tr>
+            <td>Office: +65 6532 4300</td>
+        </tr>
+        <tr>
+            <td>Fax: +65 6532 4255</td>
+        </tr>
+    </tbody>
+</table>
+<p>Share to: </p>
+<p>Phone Book: </p>
+<form action="thankyou.html">
+    <div class="form-group">
+    	<div class="radio">
+  			<label>
+    		<input type="radio" name="optionsRadios" id="ios" value="option1" checked>
+    		iOS
+  			</label>
+		</div>
+		<div class="radio">
+  		<label>
+    		<input type="radio" name="optionsRadios" id="android" value="option2">
+    		Android
+  		</label>
+		</div>
+		<div class="radio">
+  			<label>
+    		<input type="radio" name="optionsRadios" id="blackberry" value="option3">
+    		BlackBerry
+  			</label>
+		</div>
+		<div class="radio">
+  			<label>
+    		<input type="radio" name="optionsRadios" id="windows" value="option3">
+    		Windows
+  			</label>
+		</div>
+		<p>Email Address Book:</p>
+    <table>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" value="" checked>
+          </td>
+          <td>Outlook</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" value="" checked>
+          </td>
+          <td>Gmail</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" value="" checked>
+          </td>
+          <td>Apple Mail</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" value="" checked>
+          </td>
+          <td>Thunderbird</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" value="" checked>
+          </td>
+          <td>Others</td>
+          <td><input type="text"></td>
+        </tr>
+    </table>
+		<!--div class="checkbox">
+  			<label>
+    			<input type="checkbox" value="" checked>
+    			Outlook
+    			<input style="margin-left:29px" type="text">
+  			</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked>
+	    		Gmail
+	    		<input style="margin-left:42px" type="text">
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked>
+	    		Apple Mail
+	    		<input style="margin-left:13px" type="text">
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked>
+	    		Thunderbird
+	    		<input type="text">
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked>
+	    		Others
+	    		<input style="margin-left:35px" type="text">
+	  		</label>
+		</div-->
+    </div>
+   
+    <button type="submit" id="sync" class="btn btn-primary">Next</button>
+</form>
